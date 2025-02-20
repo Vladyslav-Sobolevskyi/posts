@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body {
+    padding: 0;
+    background-color: rgb(223, 222, 227);
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+
+    width: 80%;
+    margin: auto;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+h2 {
+    padding: 0;
+    margin: 0;
+}
+
+
+#new-post {
+    color: #000000;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: -0.32px;
+
+    padding: 10px 30px;
+    border: none;
+    border-radius:  100px;
+}
+
+#new-post:hover {
+    color: white;
+    background-color: #3953fa;
+}
+
+#postsList {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.post-header {
+    display: flex;
+}
+.post {
+    width: 100%;
+    padding: 16px;
+    background-color: white;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;    
+    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.054);
+}
+
+.post-author {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.post-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;   
+}
+
+.post-avatar {
+    width: 56px;
+    height: 56px;
+    background-color: grey;
+    border-radius: 50%;
+}
+
+.post-user {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.post-buttons {
+    display: flex;
+    gap: 16px;
+}
+.post-name {
+    color: #171717;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.post-email {
+    color: var(--Twitter-grey-2, #536471);
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.buttons-edit {
+    all: unset;
+    cursor: pointer;
+    color:  #536471;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.post-buttons {
+    display: flex;
+    gap: 16px;
+}
+ 
+.buttons-delete {
+    cursor: pointer;
+    padding: 0%;
+    width: 18px;
+    height: 18px;
+    fill: none;
+    stroke: #ff5050;
+    
+
+}
+
+.post-title {
+    color: #000;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.32px;
+}
+
+.post-text{
+    color: #000;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+    letter-spacing: -0.32px;
+}
+
+.post-line {
+    height: 2px;
+    width: 100%;
+    background: #C8D1D9;
+}
+
+
+.modal {
+    position: fixed;
+	left: 0;
+	top: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(255, 255, 255, 0.6);
+	z-index: 1;
+	display: flex;
+}
+
+.modal-body {
+	margin: auto;
+    width: 60%;
+	padding: 40px;
+	background-color: rgb(223, 222, 227);
+	border-radius: 16px;
+	z-index: 3;
+
+	display: flex;
+	position: relative;
+}
+
+.modal-form {
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    gap: 16px;
+}
+.form-text {
+    color: #000;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+    letter-spacing: -0.32px;
+
+    display: block;
+    border: none;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: white;
+    
+}
+.form-text::placeholder {
+    font-size: 14px;
+}
+
+.form-textarea {
+    color: #000;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+    letter-spacing: -0.32px;
+
+    display: block;
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+    max-width: 100%;
+    min-width: 100%;
+
+    min-height: 50px; 
+    max-height: 300px;
+
+    /* resize: none; */
+}
+.form-textarea::placeholder {
+    font-size: 14px;
+}
+
+.buttons-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.form-button {
+    color: #ffffff;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: -0.32px;
+
+    padding: 10px 30px;
+    border: none;
+    border-radius:  100px;
+}
+
+.button-submit {
+    background-color: #6c7ffa;
+}
+.button-submit:hover {
+    background-color: #3953fa;
+}
+
+.button-close {
+    background-color: #fa8989;
+}
+.button-close:hover {
+    background-color: #ff5050;
+}
+
+#loader {
+    margin-top: 20px;
+    border-radius: 10px;
+    height: 4px;
+    width: 100%;
+    --c:no-repeat linear-gradient(#3953fa 0 0);
+    background: var(--c),var(--c),#a1acf4;
+    background-size: 60% 100%;
+    animation: l16 3s infinite;
+  }
+  @keyframes l16 {
+    0%   {background-position:-150% 0,-150% 0}
+    66%  {background-position: 250% 0,-150% 0}
+    100% {background-position: 250% 0, 250% 0}
+  }
